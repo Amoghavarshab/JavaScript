@@ -49,3 +49,29 @@ console.log(typeof anotherId);
        Arrays  =>  object
        Function  =>  function
        Object  =>  object */
+
+/* ************************************************** */
+
+// two types of memory => stack and heap
+//stack(primitive) we get copy
+//heap(non-primitive) we get original value(refernce)
+
+let myYoutubename="amoghavarshadotcom"
+
+let anothername=myYoutubename
+anothername="chai aur code"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo=userOne
+
+userTwo.email="amogh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
